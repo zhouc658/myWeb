@@ -1,0 +1,68 @@
+/* Global Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #A3D8F4; /* Light Sky Blue */
+}
+
+.art-gallery {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.art-gallery h1 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Gallery grid */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+/* Art Item Styles */
+.art-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.art-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+
+a {
+    position: absolute;
+    bottom: 20px; /* Distance from the bottom of the viewport */
+    left: 20px;   /* Distance from the left of the viewport */
+    
+    /* Button styles */
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);  /* Gradient background */
+    border-radius: 8px;  /* Rounded corners */
+    padding: 15px 30px;  /* Padding for the button */
+    box-sizing: border-box;
+    text-decoration: none; /* Remove underline */
+    color: #fff;  /* White text */
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15); /* Shadow effect */
+    
+    /* Optional: Add transition for hover effect */
+    transition: all 0.3s ease;
+  }
+  
+  a:hover {
+    
+    transform: translateY(-5px); /* Slight upward movement on hover */
+  }
+  
